@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.container {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 20px;
+}
+
+.booking-summary, .payment-form {
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.booking-summary {
+    margin-right: 10px;
+}
+
+.booking-summary h3, .payment-form h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.booking-summary p, .payment-form label {
+    margin-bottom: 8px;
+}
+
+.card-images {
+    margin-bottom: 15px;
+}
+
+.card-images img {
+    width: 60px;
+    margin-right: 10px;
+}
+
+.card-details {
+    margin-bottom: 20px;
+}
+
+.card-details label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-details input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3ecc6d;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #05cf48;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .booking-summary, .payment-form {
+        margin-right: 0;
+    }
+}
